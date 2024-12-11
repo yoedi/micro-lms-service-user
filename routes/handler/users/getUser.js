@@ -1,6 +1,3 @@
-const bcrypt = require('bcrypt');
-const Validator = require('fastest-validator');
-const v = new Validator();
 const { User } = require('../../../models/User');
 
 module.exports = async (req, resp) => {
