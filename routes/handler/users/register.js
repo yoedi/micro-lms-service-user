@@ -6,9 +6,10 @@ const { User } = require('../../../models/User');
 module.exports = async (req, resp) => {
   const schema = {
     name: "string|empty:false",
-    email: "string|empty:false",
+    email: "email|empty:false",
     password: "string|min:6",
     profession: "string|optional",
+    avatar: "string|optional",
   }
 
   const validate = v.validate(req.body, schema);

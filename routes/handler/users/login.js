@@ -5,7 +5,7 @@ const { User } = require('../../../models/User');
 
 module.exports = async (req, resp) => {
   const schema = {
-    email: "string|empty:false",
+    email: "email|empty:false",
     password: "string|min:6",
   }
 
